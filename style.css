@@ -1,0 +1,67 @@
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+#title {
+  background-color: rgb(47, 134, 247);
+  color:white;
+  display: inline-block;
+}
+.grid-container {
+  display: grid;
+}
+
+.expenses {
+  display: grid;
+}
+
+#container {
+  grid-template-columns: 155px 359px 75px 100px;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#summary {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.today {
+  grid-column: 1/2;
+  grid-row: 1;
+}
+
+.month-subtitle {
+  grid-column: 2/4;
+  grid-row: 1;
+}
+
+.table-title .date {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.table-title .expenses-name {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.table-title .total {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.table-title .payment-type {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.table-title .category {
+  grid-column: 5;
+  grid-row: 2;
+}
+
+.table-title .note {
+  grid-column: 6;
+  grid-row: 2;
+}
