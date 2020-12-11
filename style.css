@@ -15,14 +15,11 @@ body {
   display: grid;
 }
 
+/* Main expenses table */
 #container {
   grid-template-columns: 155px 359px 75px 100px;
+  grid-template-rows: min-content min-content;
   grid-column: 1;
-  grid-row: 1;
-}
-
-#summary {
-  grid-column: 2;
   grid-row: 1;
 }
 
@@ -36,32 +33,102 @@ body {
   grid-row: 1;
 }
 
-.table-title .date {
+.table-title.date {
   grid-column: 1;
   grid-row: 2;
 }
 
-.table-title .expenses-name {
+.table-title.expenses-name {
   grid-column: 2;
   grid-row: 2;
 }
 
-.table-title .total {
+.table-title.total {
   grid-column: 3;
   grid-row: 2;
 }
 
-.table-title .payment-type {
+.table-title.payment-type {
   grid-column: 4;
   grid-row: 2;
 }
 
-.table-title .category {
+.table-title.category {
   grid-column: 5;
   grid-row: 2;
 }
 
-.table-title .note {
+.table-title.note {
   grid-column: 6;
   grid-row: 2;
 }
+
+/* summary table */
+#summary {
+  grid-column: 2;
+  grid-row: 1;
+  grid-auto-rows: min-content;
+}
+
+.expenses-summary-title {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.left-to-spend {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.to-spend-per-day {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.current-salary {
+  grid-column: 1;
+  grid-row: 2;
+}
+.rent.living {
+  grid-column: 1;
+  grid-row: 3;
+}
+.utilities.living {
+  grid-column: 1;
+  grid-row: 4;
+}
+.tv-internet.fun {
+  grid-column: 1;
+  grid-row: 5;
+}
+.groceries {
+  grid-column: 1;
+  grid-row: 6;
+  background-color: rgb(146, 64, 223);
+}
+.transportation {
+  grid-column: 1;
+  grid-row: 7;
+  background-color: rgb(116, 196, 223);
+}
+.going-out.fun {
+  grid-column: 1;
+  grid-row: 8;
+}
+.sports.fun {
+  grid-column: 1;
+  grid-row: 9;
+}
+.miscellaneous {
+  grid-column: 1;
+  grid-row: 10;
+  background-color: rgb(242, 242, 166);
+}
+
+.living {
+  background-color: orange;
+}
+.fun {
+  background-color: rgb(180, 180, 180);
+}
+

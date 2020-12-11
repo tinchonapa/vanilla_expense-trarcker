@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Expense Tracker</title>
   <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
   <div id="title">
@@ -21,7 +22,10 @@
           <p id="today">Today is <i id="todays-date"></i></p>
         </div>
         <div class="month-subtitle">
-          <p>NOVEMBER EXPENSES</p>
+          <p>DECEMBER EXPENSES</p>
+        </div>
+        <div class="end-of-month">
+          <p>12/31/20</p>
         </div>
         <div class="table-title date">
           <p>Date</p>
@@ -82,6 +86,10 @@
       </div>
     </div>
   </div>
-
+  <script>
+    var d = new Date()
+    document.getElementById('todays-date').innerHTML = d.toLocaleDateString('en-US');
+    // document.getElementsByClassName('date')[0].firstElementChild.innerHTML = 
+  </script>
 </body>
 </html>
